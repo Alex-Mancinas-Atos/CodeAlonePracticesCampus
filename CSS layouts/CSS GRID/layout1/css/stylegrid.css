@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 20% 150px auto; */
+    /* grid-template-columns: min-content min-content max-content; */
+    /* grid-template-columns: fit-content(10em),fit-content(10em),fit-content(10em); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 20px;
+}
+
