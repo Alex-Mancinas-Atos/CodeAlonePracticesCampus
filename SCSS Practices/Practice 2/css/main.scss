@@ -1,0 +1,70 @@
+@import 'scss/config';
+@import 'scss/home';
+@import 'scss/menu';
+@import 'scss/about';
+@import 'scss/projects';
+@import 'scss/contact';
+@import 'scss/responsive';
+
+body {
+    background-color: $primary_color;
+    color: set-text-color($primary_color);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+  
+    height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+a {
+    color: $light;
+    text-decoration: none;
+}
+
+header {
+    position: fix;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+        a {
+            color: set-text-color($primary_color);
+            padding: 0.4rem;
+            font-size: 1.5rem;
+            padding: 0 2px;
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    color: set-text-color($primary_color);
+}
