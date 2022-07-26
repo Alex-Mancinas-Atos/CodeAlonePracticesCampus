@@ -8,6 +8,13 @@
       <!-- <div class="app-servers"></div> -->
       <hr>
       <app-own-component></app-own-component>
+      <hr>
+      <button class="btn btn-primary" (click)="onToggleDetails()" >Display details</button>
+      <p *ngIf="showSecret">Secret Password = tuna</p>
+      <div *ngFor="let logItem of log let i = index"
+           [ngStyle]="{backgroundColor: i>=4 ? 'blue' : 'transparent'}"
+           [ngClass]="{'white-text': i>=4}"
+      >{{logItem}}</div>
     </div>
   </div>
 </div>
